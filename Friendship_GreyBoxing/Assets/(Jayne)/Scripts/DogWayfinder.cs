@@ -37,7 +37,7 @@ public class DogWayfinder : MonoBehaviour {
         }
         else
         {
-            if (dogWayPoints != null && startWayPointIndex<= dogWayPoints.Count)
+            if (dogWayPoints != null || startWayPointIndex<= dogWayPoints.Count)
             {
                 currentWayPointIndex = startWayPointIndex;
                 SetDestination(currentWayPointIndex);

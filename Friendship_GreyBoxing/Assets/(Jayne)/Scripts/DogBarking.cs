@@ -11,10 +11,12 @@ public class DogBarking : MonoBehaviour
     public AudioClip[] barkClips;
     AudioClip randomisedClip;
     public float maxTimeToBarkBout;
+    public float minTimeToBarkBout;
     public int maxNumOfBarks;
     float timeToBarkBout;
     int barkToPlay;
     public float maxBarkRest;
+    public float minBarkRest;
     float barkRest;
 
     void Start()
@@ -25,13 +27,18 @@ public class DogBarking : MonoBehaviour
             Debug.Log("No audio clips assigned to " + gameObject.name);
             Application.Quit();
         }
-        if (maxTimeToBarkBout < 4.0f)
+        if (minTimeToBarkBout < 4.0f)
         {
-            maxTimeToBarkBout = 4.0f;
+            minTimeToBarkBout = 4.0f;
         }
-        if (maxBarkRest < 0.5f)
+
+        if (maxTimeToBarkBout < minTimeToBarkBout)
         {
-            maxBarkRest = 0.5f;
+            maxTimeToBarkBout = minTimeToBarkBout;
+        }
+        if (maxBarkRest < minBarkRest)
+        {
+            maxBarkRest = minBarkRest;
         }
 
         thisDogBark = gameObject.GetComponent<AudioSource>();
@@ -45,12 +52,12 @@ public class DogBarking : MonoBehaviour
 
         for (int i = 0; i < numberOfBarks; i++)
         {
-            float barkRest = UnityEngine.Random.Range(1.0f, maxBarkRest);
+            float barkRest = UnityEngine.Random.Range(minBarkRest, maxBarkRest);
   //          Debug.Log("barkRest is " + barkRest);
             Invoke("ChooseBark", barkRest);           
         }
 
-        timeToBarkBout = UnityEngine.Random.Range(4.0f, maxTimeToBarkBout);
+        timeToBarkBout = UnityEngine.Random.Range(minTimeToBarkBout, maxTimeToBarkBout);
  //       Debug.Log("timeToBarkBout is " + timeToBarkBout);
         Invoke("DoBarking", timeToBarkBout);
     }
