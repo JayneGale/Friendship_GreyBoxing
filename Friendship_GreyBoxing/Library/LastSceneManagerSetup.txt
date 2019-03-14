@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/AudioGreyBox.unity
+- path: Assets/(Jayne)/Scenes/Navmeshscene001.unity
   isLoaded: 1
   isActive: 1
