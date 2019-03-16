@@ -13,8 +13,6 @@ public class ZonesChange : MonoBehaviour
 
         if (other.tag == "Player")
         {
-            Debug.Log("Player has collided with " + gameObject.name);
-            Debug.Log("This collider's waypoint is " + currentWaypoint);
             DogWayfinder.instance.SetDestination(currentWaypoint);
         }
     }

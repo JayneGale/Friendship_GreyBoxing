@@ -27,6 +27,7 @@ GameObject:
   - component: {fileID: 82587261749266412}
   - component: {fileID: 195006285750918984}
   - component: {fileID: 54966825273692484}
+  - component: {fileID: 114334438014033836}
   m_Layer: 0
   m_Name: Dog
   m_TagString: Untagged
@@ -136,7 +137,7 @@ AudioSource:
   Priority: 39
   DopplerLevel: 3.92
   MinDistance: 1.3448267
-  MaxDistance: 80
+  MaxDistance: 120
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -166,20 +167,20 @@ AudioSource:
     - serializedVersion: 3
       time: 0.536822
       value: 0.23138428
-      inSlope: -1.9549965
-      outSlope: -1.9549965
+      inSlope: -1.2372558
+      outSlope: -1.2372558
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.21135677
-      outWeight: 0.22200894
+      outWeight: 0.16595033
     - serializedVersion: 3
       time: 1
       value: 0
-      inSlope: -0.2518868
-      outSlope: -0.2518868
+      inSlope: -0.0253433
+      outSlope: -0.0253433
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.6507366
+      inWeight: 0.2764279
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -267,9 +268,21 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 92922570429dc154f8bd528523ec2439, type: 3}
   maxTimeToBarkBout: 16
   minTimeToBarkBout: 8
-  maxNumOfBarks: 6
-  maxBarkRest: 5
-  minBarkRest: 2
+  maxNumOfBarks: 8
+  maxBarkRest: 6
+  minBarkRest: 3
+--- !u!114 &114334438014033836
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1380754370075880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1002160353, guid: 1c6d1fbb51834b64847b1b73a75bfc77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RoomSize: 3
 --- !u!195 &195006285750918984
 NavMeshAgent:
   m_ObjectHideFlags: 1

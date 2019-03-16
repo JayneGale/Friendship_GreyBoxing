@@ -51,8 +51,8 @@ public class DogWayfinder : MonoBehaviour {
 
     public void SetDestination(int waypointIndex)
     {
-        Debug.Log(" SetDestination called on waypoint " + waypointIndex);
-        //IF the List isn't empty
+  //      Debug.Log(" SetDestination called on waypoint " + waypointIndex);
+        //If the List isn't empty
         if (dogWayPoints != null)
         {
             //If the proposed destination is outside the List, make it inside the List

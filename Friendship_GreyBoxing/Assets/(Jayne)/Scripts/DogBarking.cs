@@ -48,12 +48,12 @@ public class DogBarking : MonoBehaviour
     void DoBarking()
     {
         int numberOfBarks = UnityEngine.Random.Range(2, maxNumOfBarks);
-  //      Debug.Log("numberOfBarks is " + numberOfBarks);
+ //       Debug.Log("numberOfBarks is " + numberOfBarks);
 
         for (int i = 0; i < numberOfBarks; i++)
         {
             float barkRest = UnityEngine.Random.Range(minBarkRest, maxBarkRest);
-  //          Debug.Log("barkRest is " + barkRest);
+//            Debug.Log("barkRest is " + barkRest);
             Invoke("ChooseBark", barkRest);           
         }
 
@@ -65,7 +65,9 @@ public class DogBarking : MonoBehaviour
     public void ChooseBark()
     {
         barkToPlay = UnityEngine.Random.Range(0, barkClips.Length);
-        thisDogBark.PlayOneShot(barkClips[barkToPlay]);
+ //       thisDogBark.PlayOneShot(barkClips[barkToPlay]);
+        AudioClip randomisedClip = barkClips[barkToPlay];
+        thisDogBark.Play();
     }
 }
 
