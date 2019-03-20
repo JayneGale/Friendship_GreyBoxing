@@ -266,11 +266,12 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 5273ba29c4d024d449fb63f284bde0f4, type: 3}
   - {fileID: 8300000, guid: 4d7321c3c3b3c9247a78179e9ca0853a, type: 3}
   - {fileID: 8300000, guid: 92922570429dc154f8bd528523ec2439, type: 3}
-  maxTimeToBarkBout: 16
-  minTimeToBarkBout: 8
-  maxNumOfBarks: 8
-  maxBarkRest: 6
-  minBarkRest: 3
+  maxTimeToBarkBout: 12
+  minTimeToBarkBout: 6
+  minNumOfBarks: 4
+  maxNumOfBarks: 6
+  maxBarkRest: 0.8
+  minBarkRest: 0.5
 --- !u!114 &114334438014033836
 MonoBehaviour:
   m_ObjectHideFlags: 1

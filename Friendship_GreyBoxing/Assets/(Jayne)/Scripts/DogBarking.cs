@@ -10,8 +10,10 @@ public class DogBarking : MonoBehaviour
     AudioSource thisDogBark;
     public AudioClip[] barkClips;
     AudioClip randomisedClip;
+    AudioClip barkSet;
     public float maxTimeToBarkBout;
     public float minTimeToBarkBout;
+    public int minNumOfBarks;
     public int maxNumOfBarks;
     float timeToBarkBout;
     int barkToPlay;
@@ -42,32 +44,47 @@ public class DogBarking : MonoBehaviour
         }
 
         thisDogBark = gameObject.GetComponent<AudioSource>();
+        barkSet = thisDogBark.GetComponent<AudioClip>();
         DoBarking();
     }
 
     void DoBarking()
     {
-        int numberOfBarks = UnityEngine.Random.Range(2, maxNumOfBarks);
- //       Debug.Log("numberOfBarks is " + numberOfBarks);
+        int numberOfBarks = UnityEngine.Random.Range(minNumOfBarks, maxNumOfBarks);
+        Debug.Log("numberOfBarks is " + numberOfBarks);
 
         for (int i = 0; i < numberOfBarks; i++)
         {
             float barkRest = UnityEngine.Random.Range(minBarkRest, maxBarkRest);
-//            Debug.Log("barkRest is " + barkRest);
-            Invoke("ChooseBark", barkRest);           
+            Debug.Log("barkRest is " + barkRest);
+//            ChooseBark();
+            //          Invoke("StopBark", barkRest);
+            Invoke("ChooseBark", barkRest);
+  //          thisDogBark.Play();
         }
 
         timeToBarkBout = UnityEngine.Random.Range(minTimeToBarkBout, maxTimeToBarkBout);
- //       Debug.Log("timeToBarkBout is " + timeToBarkBout);
+        Debug.Log("timeToBarkBout is " + timeToBarkBout);
         Invoke("DoBarking", timeToBarkBout);
     }
 
     public void ChooseBark()
     {
         barkToPlay = UnityEngine.Random.Range(0, barkClips.Length);
- //       thisDogBark.PlayOneShot(barkClips[barkToPlay]);
-        AudioClip randomisedClip = barkClips[barkToPlay];
+        Debug.Log("barkToPlay is " + barkToPlay);
+        barkSet = barkClips[barkToPlay];
+        thisDogBark.clip = barkSet;
+        //       thisDogBark.PlayOneShot(barkClips[barkToPlay]);
+        Debug.Log("Play dat bark");
         thisDogBark.Play();
+        //       Invoke("StopBark", barkRest);
     }
+
+    /*    public void StopBark()
+        {
+            Debug.Log("Stopping bark after barkRest " + barkRest);
+            thisDogBark.Stop();
+        }
+      */
 }
 
