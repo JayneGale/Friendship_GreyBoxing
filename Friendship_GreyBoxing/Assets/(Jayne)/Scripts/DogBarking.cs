@@ -60,7 +60,8 @@ public class DogBarking : MonoBehaviour
 //            ChooseBark();
             //          Invoke("StopBark", barkRest);
             Invoke("ChooseBark", barkRest);
-  //          thisDogBark.Play();
+            //
+            thisDogBark.Play();
         }
 
         timeToBarkBout = UnityEngine.Random.Range(minTimeToBarkBout, maxTimeToBarkBout);

@@ -26,7 +26,7 @@ public class DogWayfinder : MonoBehaviour {
             Destroy(gameObject);
  
         navmeshAgent = gameObject.GetComponent<NavMeshAgent>();
-        Debug.Log(" dogWayPoints.Count is " + dogWayPoints.Count);
+  //      Debug.Log(" dogWayPoints.Count is " + dogWayPoints.Count);
         dogRunAudio = gameObject.GetComponent<AudioSource>();
 
 
