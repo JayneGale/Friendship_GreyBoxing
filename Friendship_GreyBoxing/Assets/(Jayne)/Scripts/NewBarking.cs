@@ -25,6 +25,39 @@ public class NewBarking : MonoBehaviour
 
     void Start()
     {
+        if (newBarkClips.Length < 1)
+        {
+            Debug.Log("No audio clips assigned to " + gameObject.name);
+            Application.Quit();
+        }
+        if (minTimeToBarking > maxTimeToBarking)
+        {
+            Debug.Log("Minimum time greater than maximum time " + gameObject.name);
+            minTimeToBarking = maxTimeToBarking;
+        }
+        if (minTimeToBarking < 1)
+        {
+            Debug.Log("Minimum time is zero " + gameObject.name);
+            minTimeToBarking = 1;
+        }
+        if (maxTimeToBarking< 1)
+        {
+            Debug.Log("Maximum time is zero " + gameObject.name);
+            maxTimeToBarking = 1;
+        }
+
+        if (maxBarkGap < minBarkGap)
+        {
+            Debug.Log("Minimum time gap greater than maximum time gap" + gameObject.name);
+            minBarkGap = maxBarkGap;
+        }
+
+        if (maxBarkGap < 0)
+        {
+            Debug.Log("Maximum time gap is zero " + gameObject.name);
+            maxBarkGap = 0.1f;
+        }
+
         dogBarkAudio = gameObject.GetComponent<AudioSource>();
         barkNow = dogBarkAudio.GetComponent<AudioClip>();
         barkToBark = UnityEngine.Random.Range(0, newBarkClips.Length);
@@ -63,9 +96,7 @@ public class NewBarking : MonoBehaviour
 
     IEnumerator ChooseNextBark()
     {
-       print("ChooseBark");
         notBarking2 = false;
-
         //Choose an audio clip
         barkToBark = UnityEngine.Random.Range(0, newBarkClips.Length);
         barkNow = newBarkClips[barkToBark];

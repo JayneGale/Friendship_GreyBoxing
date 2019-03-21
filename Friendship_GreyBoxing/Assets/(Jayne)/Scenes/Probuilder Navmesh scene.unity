@@ -13142,13 +13142,12 @@ GameObject:
   - component: {fileID: 848990050}
   - component: {fileID: 848990049}
   - component: {fileID: 848990048}
-  - component: {fileID: 848990047}
-  - component: {fileID: 848990046}
   - component: {fileID: 848990045}
   - component: {fileID: 848990053}
   - component: {fileID: 848990044}
   - component: {fileID: 848990043}
   - component: {fileID: 848990042}
+  - component: {fileID: 848990047}
   - component: {fileID: 848990052}
   m_Layer: 0
   m_Name: Dog
@@ -13322,32 +13321,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &848990046
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114026967439604434, guid: c352e75aa56a8a44aa0c6ece1cb7495e,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 848990041}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b93a2ce16a49cf04bb5137bd1b4ce1f4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  barkClips:
-  - {fileID: 8300000, guid: ea35c4ef6171aca4da04769c75dbae96, type: 3}
-  - {fileID: 8300000, guid: e6e4566be01e4aa45b04b006bd0a1d66, type: 3}
-  - {fileID: 8300000, guid: 05305de0923b13f49933055f68d82087, type: 3}
-  - {fileID: 8300000, guid: 884f40da84c3bed4199ebc3e71be87e0, type: 3}
-  - {fileID: 8300000, guid: 5273ba29c4d024d449fb63f284bde0f4, type: 3}
-  - {fileID: 8300000, guid: 4d7321c3c3b3c9247a78179e9ca0853a, type: 3}
-  - {fileID: 8300000, guid: 92922570429dc154f8bd528523ec2439, type: 3}
-  maxTimeToBarkBout: 4
-  minTimeToBarkBout: 4
-  minNumOfBarks: 6
-  maxNumOfBarks: 4
-  maxBarkRest: 1.2
-  minBarkRest: 1
 --- !u!114 &848990047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13456,12 +13429,12 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 5273ba29c4d024d449fb63f284bde0f4, type: 3}
   - {fileID: 8300000, guid: 4d7321c3c3b3c9247a78179e9ca0853a, type: 3}
   - {fileID: 8300000, guid: 92922570429dc154f8bd528523ec2439, type: 3}
-  minTimeToBarking: 10
-  maxTimeToBarking: 20
-  minBarkGap: 0.8
-  maxBarkGap: 1.6
+  minTimeToBarking: 16
+  maxTimeToBarking: 32
+  minBarkGap: 1
+  maxBarkGap: 2
   minNumBarks: 1
-  maxNumBarks: 6
+  maxNumBarks: 5
 --- !u!114 &848990053
 MonoBehaviour:
   m_ObjectHideFlags: 0
