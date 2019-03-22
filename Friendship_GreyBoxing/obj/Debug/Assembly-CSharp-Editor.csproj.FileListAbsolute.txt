@@ -216,3 +216,5 @@ D:\932400056\Documents\Git\Friendship_GreyBoxing\Friendship_GreyBoxing\obj\Debug
 D:\932400056\Documents\Git\Friendship_GreyBoxing\Friendship_GreyBoxing\obj\Debug\Assembly-CSharp-Editor.csproj.CopyComplete
 D:\932400056\Documents\Git\Friendship_GreyBoxing\Friendship_GreyBoxing\obj\Debug\Assembly-CSharp-Editor.dll
 D:\932400056\Documents\Git\Friendship_GreyBoxing\Friendship_GreyBoxing\obj\Debug\Assembly-CSharp-Editor.pdb
+D:\932400056\Documents\Git\Friendship_GreyBoxing\Friendship_GreyBoxing\Temp\bin\Debug\TextMeshPro-2017.3-Editor.dll
+D:\932400056\Documents\Git\Friendship_GreyBoxing\Friendship_GreyBoxing\Temp\bin\Debug\TextMeshPro-2017.3-Runtime.dll
