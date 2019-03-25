@@ -8,8 +8,8 @@ public class MainMenu : MonoBehaviour
 
     public void PlayGame()
     {
-        SceneManager.LoadScene("Midnight");
         Time.timeScale = 1;
+        SceneManager.LoadScene("Midnight");
     }
 
     public void ReallyQuit()
