@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/(Jayne)/Scenes/Probuilder Navmesh scene.unity
+- path: Assets/(Jayne)/Scenes/MainMenu.unity
   isLoaded: 1
   isActive: 1

@@ -5,21 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    public KeyCode pauseMenuKey = KeyCode.P;
-    public KeyCode quitMenuKey = KeyCode.Escape;
-    public KeyCode jumpMenuKey = KeyCode.Space;
-    public KeyCode RunMenuKey = KeyCode.LeftShift;
-    public KeyCode Run2MenuKey = KeyCode.RightShift;
 
     public void PlayGame()
     {
         SceneManager.LoadScene("Midnight");
+        Time.timeScale = 1;
     }
 
     public void ReallyQuit()
     {
         if (Application.isEditor)
         {
+            print("Quit pressed, exiting Play mode");
             UnityEditor.EditorApplication.isPlaying = false;
         }
         else

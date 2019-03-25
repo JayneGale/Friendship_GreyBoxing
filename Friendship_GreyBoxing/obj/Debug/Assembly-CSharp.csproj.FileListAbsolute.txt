@@ -176,3 +176,5 @@ D:\932400056\Documents\Git\Friendship_GreyBoxing\Friendship_GreyBoxing\obj\Debug
 D:\932400056\Documents\Git\Friendship_GreyBoxing\Friendship_GreyBoxing\obj\Debug\Assembly-CSharp.pdb
 D:\932400056\Documents\Git\Friendship_GreyBoxing\Friendship_GreyBoxing\Temp\bin\Debug\TextMeshPro-2017.3-Editor.dll
 D:\932400056\Documents\Git\Friendship_GreyBoxing\Friendship_GreyBoxing\Temp\bin\Debug\TextMeshPro-2017.3-Runtime.dll
+D:\932400056\Documents\Git\Friendship_GreyBoxing\Friendship_GreyBoxing\Temp\bin\Debug\UnityEditor.UI.dll
+D:\932400056\Documents\Git\Friendship_GreyBoxing\Friendship_GreyBoxing\Temp\bin\Debug\UnityEditor.UI.xml
