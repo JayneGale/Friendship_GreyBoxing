@@ -13551,10 +13551,6 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1549793330426414, guid: c2bc16d2bfe35a346abcd4319a801ec6, type: 2}
-      propertyPath: m_Name
-      value: PauseMenu Canvas
-      objectReference: {fileID: 0}
     - target: {fileID: 114104186699888516, guid: c2bc16d2bfe35a346abcd4319a801ec6,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
