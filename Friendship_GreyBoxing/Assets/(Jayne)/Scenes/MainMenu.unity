@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -155,7 +155,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.71227777, g: 0.47231835, b: 0.7647059, a: 0}
+  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -392,10 +392,6 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1688905534}
-    - target: {fileID: 1289741473326396, guid: a9e94dde8dce8af4e82edf0e0e217791, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a9e94dde8dce8af4e82edf0e0e217791, type: 2}
   m_IsPrefabParent: 0
@@ -496,9 +492,10 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1943207842256548, guid: f84a1296d9b3124498f886cefbcb67cf, type: 2}
-      propertyPath: m_IsActive
-      value: 0
+    - target: {fileID: 114025785883194034, guid: f84a1296d9b3124498f886cefbcb67cf,
+        type: 2}
+      propertyPath: m_ReferenceResolution.y
+      value: 900
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f84a1296d9b3124498f886cefbcb67cf, type: 2}
@@ -620,21 +617,6 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1605172913}
-    - target: {fileID: 224996368616038312, guid: ceaad3b61eb2af44397d22dfefa90205,
-        type: 2}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224996368616038312, guid: ceaad3b61eb2af44397d22dfefa90205,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: -523
-      objectReference: {fileID: 0}
-    - target: {fileID: 224996368616038312, guid: ceaad3b61eb2af44397d22dfefa90205,
-        type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 80
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ceaad3b61eb2af44397d22dfefa90205, type: 2}
   m_IsPrefabParent: 0

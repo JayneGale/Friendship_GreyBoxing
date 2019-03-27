@@ -91,7 +91,11 @@ public class UIParticleSystem : MonoBehaviour {
 
 
 	// Use this for initialization
-	void Start () {    
+	void Start () {
+        if (ParticlePool == null)
+            Init();
+        if (PlayOnAwake)
+            Play();
     }
 
     void Awake()
